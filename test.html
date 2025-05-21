@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Highschool level quiz</title>
+    <link rel="stylesheet" href="SHSquizStyle.css">
+</head>
+<body>
+    <a href="santos.html" class="logo"></a>
+    <div class="movingImg">  
+        <div id="trail-container"></div>
+        <img id="moving-image" src="car.png" alt="Moving Image" style="width: 175px; height: 100px;"> 
+    </div>
+    <div class="container">
+        <div id="quiz">
+            <div class="timer" id="timer">Time Left: 1:00 </div>
+            <div class="distance-travelled" id="distance-travelled">Distance Travelled: 0 km</div>
+            <div id="currency-display"> Currency: 0 <br><br><br> </div>
+            <div class="question" id="question"></div>
+            <ul class="options" id="options"></ul>
+        </div>
+        <div class="result" id="result">
+            <p id="score"></p>
+            <p id="correct-percentage">Correct Answers: 0%</p>
+            <p id="distance-result">Distance Travelled: 0 km</p>
+            <p id="currency-result">Currency: 0</p>
+            <div id="question-summary"></div>
+            <button class="btn" onclick="restartQuiz()">Restart Quiz</button>
+        
+
+        </div>
+    </div>  
+
+    
+    <script type="module" src="quiz.js"></script>
+
+</body>
+</html>

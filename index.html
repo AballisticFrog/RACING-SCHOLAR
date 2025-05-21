@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="SHSquizStyle.css">
+<style>
+
+* {
+    box-sizing:border-box;
+}
+
+.container {
+            width: 100%;
+            max-width: 400px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .toggle-link {
+            text-align: center;
+            margin-top: 10px;
+            color: #007BFF;
+            cursor: pointer;
+        }
+
+        .toggle-link:hover {
+            text-decoration: underline;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" placeholder="Enter your username" required>
+                
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+            <p class="toggle-link" onclick="toggleForms()">Don't have an account? Register</p>
+        </div>
+
+        <div id="register-form" style="display: none;">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="register-username">Username</label>
+                <input type="text" id="register-username" placeholder="Enter your username" required>
+                
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" placeholder="Enter your password" required>
+                
+                <label for="register-confirm-password">Confirm Password</label>
+                <input type="password" id="register-confirm-password" placeholder="Confirm your password" required>
+                
+                <button type="submit">Register</button>
+            </form>
+            <p class="toggle-link" onclick="toggleForms()">Already have an account? Login</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script type="module" src="login-register.js" ></script>
+</body>
+</html>

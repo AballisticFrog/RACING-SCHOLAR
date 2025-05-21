@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="santosStyle.css">
+    <title>Racing Scholar</title>
+</head>
+<body>
+
+    
+    <a href="" class="logo"></a>
+    <div class="mainMenu">
+        <div class="play-button btn btn-swipe-left btn-swipe-left--black">
+            <span>PLAY</span>
+        </div>
+        <div class="profile-button btn btn-swipe-left btn-swipe-left--black">
+            <span>Profile</span>
+        </div>
+        <div class="store-button btn btn-swipe-left btn-swipe-left--black">
+            <span>Store</span>
+        </div>
+        <div class="credits-button btn btn-swipe-left btn-swipe-left--black">
+            <span>Credits</span>
+        </div>
+    </div>
+    
+    <div class="playMenu">
+        <button class="back-button">Back</button>
+        <h1>P  L  A  Y </h1>
+        <p> choose year level to begin </p>
+        <div class="levels">
+            <a href="test.html"><button class="elementary">Elementary</button></a>
+            <a href="test.html"><button class="junior-high">Junior High School</button></a>
+            <a href="test.html"><button class="senior-high">Senior High School</button></a>
+        </div>  
+    </div>
+    <div class="profileMenu">
+        <button class="back-button">Back</button>
+    <h1>Profile</h1>
+    <div class="stats-container">
+        <div class="stat-box">
+            <h2>Username</h2>
+            <div class="value">
+                <span id="profile-username"></span>
+            </div>
+        </div>
+        <div class="stat-box">
+            <h2>Leaderboard Rank:</h2>
+            <div class="value">
+                <span id="profile-place"></span>
+            </div>
+        </div>
+        <div class="stat-box">
+            <h2>Highest Kilometers Travelled:</h2>
+            <div class="value">
+                <span id="profile-kilometers"></span>
+            </div>
+        </div>
+    </div>
+      <a href="index.html"> <button class="logout-button">Logout</button> </a> 
+    </div>    
+    </div>
+    <div class="storeMenu">
+        <button class="back-button">Back</button>
+        <h1>Store</h1>
+        <div class="cars">
+            <div class="car">
+                <img src="default car.png" alt="default">
+                <button class="select-car" data-car="default car.png">Select Starter Car</button>
+            </div>
+            <div class="car">
+                <img src="formula 1.png" alt="formula1_car">
+                <button class="select-car" data-car="formula 1.png">Select Formula 1</button>
+            </div>
+            <div class="car">
+                <img src="trueno ae86.png" alt="trueno">
+                <button class="select-car" data-car="trueno ae86.png">Select Toyota AE86</button>
+            </div>
+            <div class="car">
+                <img src="mcqueen.png" alt="mcqueen">
+                <button class="select-car" data-car="mcqueen.png">Select Mcqueen</button>
+            </div>
+            <div class="car">
+                <img src="delorean.png" alt="delorean">
+                <button class="select-car" data-car="delorean.png">Select Delorean</button>
+            </div>
+        </div>
+
+        <div class="cars2">
+            <div class="car">
+                <img src="cadillac.png" alt="cadillac">
+                <button class="select-car" data-car="cadillac.png">Select Cadillac</button>
+            </div>
+            <div class="car">
+                <img src="skyline.png" alt="Car">
+                <button class="select-car" data-car="skyline.png">Select Skyline</button>
+            </div>
+            <div class="car">
+                <img src="bean.png" alt="Car">
+                <button class="select-car" data-car="bean.png">Select Porsche</button>
+            </div>
+            <div class="car">
+                <img src="miata.png" alt="Car">
+                <button class="select-car" data-car="miata.png">Select Miata</button>
+            </div>
+            <div class="car">
+                <img src="car.png" alt="Car">
+                <button class="select-car" data-car="car.png">Select Car</button>
+            </div>
+          <!--  <div class="car car-item">
+                <img src="mcqueen.png" alt="McQueen" class="car-thumbnail"> 
+                <h3>Lightning McQueen</h3>
+                <p class="price">5 <img src="RSlogo.jpg" class="currency-icon"></p>
+                <button class="buy-car" data-car="mcqueen.png" data-price="5" 
+                        id="mcqueen-btn">Purchase</button>
+                <p class="locked-msg" style="display: none;">🔒 Locked</p>
+            </div> --> 
+        </div>
+
+        
+    </div>
+    <div class="credsMenu">
+        <button class="back-button">Back</button>
+        <h1>Credits</h1>
+    </div>
+
+    <div class="leaderboardMenu">
+        <h1>Leaderboard</h1>
+        <div class="container"><table class="leaderboard-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player Name</th>
+                    <th>Kilometers <br> Travelled</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <!-- Dynamic leaderboard rows will be inserted here -->
+            </tbody>
+        </table></div>
+        
+    </div>
+   
+    <script type="module" src="santosFunction.js" ></script>
+    
+</body>
+</html>

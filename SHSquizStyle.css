@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "Hades-Font";
+    src: url(fonnts.com-Auto_Pro_Black_Small_Caps.otf);
+}
+
+body {
+font-family: Garamond, Geneva, Tahoma, sans-serif;
+color: white;
+margin: 0;
+padding: 0;
+background: url(quiz_bg.gif);
+background-color:    #211c1c;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.logo {
+position: absolute;
+top: 40px;
+left: 10px;
+background: url(RSlogo.jpg);
+background-size: cover;
+background-position: -10px;
+width: 180px;
+height: 180px;
+border-radius: 50%;
+border: 2px solid black;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin-top: 60px;
+margin-bottom: 50px;
+width: 1000px;
+height: auto;
+}
+
+#moving-image {
+width: 100px;
+height: 100px;
+top: 18%;
+left: 5px;
+position: absolute; 
+transition: transform 0.5s ease-in-out; 
+z-index: 10;
+}
+
+
+@keyframes moveRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100px); }
+}
+
+.move {
+    animation: moveRight 0.5s ease-in-out forwards;
+}
+
+.question {
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+    color: black;
+}
+
+.options li {
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.options li:hover {
+    background-color: #f8f6f69c;
+}
+
+.result {
+    position: absolute;  
+    top: 20%;          
+    left: 50%;           
+    transform: translateX(-50%); 
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    height: auto;
+    z-index: 10; 
+    color: black;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.incorrect {
+    color: red;
+}
+
+.correct {
+    color: green;
+}
+
+.question-summary {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 16px;
+    color: black
+}
+.movingImg {
+display: block;
+background: url(racetrack.png);
+background-repeat: no-repeat;
+background-size: cover;
+position:absolute;
+width: 1100px;
+height: 125px;
+top: 40px;
+border: 1px solid white;
+}
+
+#trail-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    pointer-events: none;
+    overflow: visible;
+    z-index: 1;
+}
+
+ /*.trail {
+    position: absolute;
+    height: 85px;
+    background-color: green;
+    z-index: 0;
+} */
+
+.marker {
+    position: absolute;
+    width: 10px;
+    height: 125px; /* Match the height of the track */
+    background: url(marker_bg.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 2;
+}
+
+.marker-label {
+    position: absolute;
+    top: 125px; /* Position below the track */
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    z-index: 3  ;
+    width: 50px; /* Adjust width for centering */
+} 
